@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+
+<html>
+  <style>
+    body {
+  min-width: 175px; /* your desired width */
+  max-width: 100%;
+  position: relative;
+  vertical-align: middle;
+  border-radius: 1px;
+  color: rgb(0, 0, 0);
+  transition: background-color 1s;
+	  }
+	  
+	  .rounded-text-box {
+  border: 0.5px solid black;
+  border-radius: 10px;
+  padding: 10px;
+  box-shadow: 3px 3px 5px #555;
+  color: rgb(0, 0, 0);
+  background-color: rgb(255, 255, 255);
+  transition: background-color 1s;
+	  }
+
+    .rounded-text-box-dark {
+  border: 0.5px solid rgb(255, 255, 255);
+  border-radius: 10px;
+  padding: 10px;
+  box-shadow: 3px 3px 5px #555;
+  color: #fff;
+  background-color: rgb(70, 70, 70);
+  transition: background-color 1s;
+	  }
+
+    .dark-mode {
+  background-color: #000;
+  color: #fff;
+  transition: background-color 1s;
+}
+
+.dark-mode-link {
+  color: rgb(0, 229, 254);
+  transition: color 1s;
+}
+
+.link {
+  color: rgb(0, 47, 254);
+  transition: color 1s;
+}
+  </style>
+  <body>
+    <h2>Lunch for Jan.</h2>
+    <h4>By: Jaydon Hall</h4>
+	  
+	<label for="dark-mode-toggle">Dark Mode:</label>  
+	<input type="checkbox" id="dark-mode-toggle">
+
+    <h3 class="rounded-text-box" id="Lunch">loading...</h3>
+	<h3 class="rounded-text-box" id="next lunch">loading...</h3>
+	<a id="Order" class="link" href="https://docs.google.com/forms/d/e/1FAIpQLSdOTkx3ZApPjkmQRoQ6OGdlSlNxZgpKLD5nx-_KrL-z1RgB_A/viewform?usp=sf_link" target="_blank" rel="noopener noreferrer">Order</a>
+	<p></p>
+	<a id="menu" class="link" href="https://www.schoolnutritionandfitness.com/webmenus2/#/view?id=634d6a80e96f1e473f2ed820&menuType=5d54552c534a13b11c285434&siteCode=5923&siteCode2=13488&showAllNutrients=false
+" target="_blank" rel="noopener noreferrer">Full Menu</a>
+	<p></p>
+	<a id="github" class="link" href="https://github.com/JayDaMan53" target="_blank" rel="noopener noreferrer">My GitHub</a>
+    <script src="contentScript.js"></script>
+  </body>
+</html>
